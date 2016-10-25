@@ -6,4 +6,5 @@ this is my config setup for
 - zsh (soon)
 - ...
 
-It is specifically designed for my personal workflow and a composition of internet findings that work for me.
+It is specifically designed to suit my personal workflow.
+It is a composition of internet findings that work for me.
