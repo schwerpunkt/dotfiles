@@ -7,6 +7,7 @@ SCRIPTDIR=${0%/*} # get dirname
 # tmux
 rm ~/.tmux.conf
 rm -r ~/.tmux
+mkdir -p $SCRIPTDIR/tmux
 ln -s $SCRIPTDIR/tmux.conf ~/.tmux.conf
 ln -s $SCRIPTDIR/tmux ~/.tmux
 
