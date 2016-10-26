@@ -5,3 +5,4 @@ tmux/tmux-resurrect
 tmux/resurrect
 vim/autoload
 vim/colors
+vim/.netrwhist
