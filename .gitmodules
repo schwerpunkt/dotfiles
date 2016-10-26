@@ -10,3 +10,6 @@
 [submodule "vim/vim-monokai"]
 	path = vim/vim-monokai
 	url = https://github.com/crusoexia/vim-monokai.git
+[submodule "vim/bundle/vim-ledger"]
+	path = vim/bundle/vim-ledger
+	url = https://github.com/ledger/vim-ledger
