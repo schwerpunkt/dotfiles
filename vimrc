@@ -6,17 +6,9 @@ syntax on
 
 "" colors-pencil style
 colorscheme pencil
-set background=dark
+set background=light
 let g:airline_theme = 'pencil'
 let g:pencil_higher_contrast_ui = 1   " 0=low (def), 1=high
-
-"" hemisu style
-" colorscheme hemisu
-" set background=light
-
-"" monokai style
-" colorscheme monokai
-" set t_Co=256  " vim-monokai now only support 256 colours in terminal.
 
 "" start with line numbers
 set nu

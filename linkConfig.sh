@@ -27,16 +27,6 @@ mkdir -p $SCRIPTDIR/vim/autoload
 rm $SCRIPTDIR/vim/autoload/pathogen.vim || true
 ln -s $SCRIPTDIR/vim/vim-pathogen/autoload/pathogen.vim $SCRIPTDIR/vim/autoload
 
-# vim monokai
-mkdir -p $SCRIPTDIR/vim/colors
-rm $SCRIPTDIR/vim/colors/monokai.vim || true
-ln -s $SCRIPTDIR/vim/vim-monokai/colors/monokai.vim $SCRIPTDIR/vim/colors
-
-# vim hemisu
-mkdir -p $SCRIPTDIR/vim/colors
-rm $SCRIPTDIR/vim/colors/hemisu.vim || true
-ln -s $SCRIPTDIR/vim/vim-hemisu/colors/hemisu.vim $SCRIPTDIR/vim/colors
-
 # vim hemisu
 mkdir -p $SCRIPTDIR/vim/colors
 mkdir -p $SCRIPTDIR/vim/autoload
