@@ -1,4 +1,7 @@
 .DS_Store
 .*.swp
 .*.swo
+tmux/tmux-resurrect
 tmux/resurrect
+vim/autoload
+vim/colors

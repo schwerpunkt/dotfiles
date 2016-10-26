@@ -4,6 +4,11 @@
 
 SCRIPTDIR=${0%/*} # get dirname
 
+# update submodules
+cd $SCRIPTDIR
+git submodule update --init --recursive
+git submodule update --recursive --remote
+
 # tmux
 rm ~/.tmux.conf
 rm -r ~/.tmux
@@ -17,8 +22,10 @@ rm ~/.vimrc
 ln -s $SCRIPTDIR/vimrc ~/.vimrc
 #ln -s $SCRIPTDIR/vim ~/.vim
 
-# update submodules
-cd $SCRIPTDIR
-git submodule update --init --recursive
-git submodule update --recursive --remote
+# vim pathogen
+mkdir -p $SCRIPTDIR/vim/autoload
+ln -s $SCRIPTDIR/vim/vim-pathogen/autoload/pathogen.vim $SCRIPTDIR/vim/autoload
 
+# vim monokai
+mkdir -p $SCRIPTDIR/vim/colors
+ln -s $SCRIPTDIR/vim/vim-monokai/colors/monokai.vim $SCRIPTDIR/vim/colors
