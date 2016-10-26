@@ -18,9 +18,9 @@ ln -s $SCRIPTDIR/tmux ~/.tmux
 
 # vim
 rm ~/.vimrc
-#rm -r ~/.vim
+rm -r ~/.vim
 ln -s $SCRIPTDIR/vimrc ~/.vimrc
-#ln -s $SCRIPTDIR/vim ~/.vim
+ln -s $SCRIPTDIR/vim ~/.vim
 
 # vim pathogen
 mkdir -p $SCRIPTDIR/vim/autoload
