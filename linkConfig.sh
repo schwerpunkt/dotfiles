@@ -31,3 +31,16 @@ ln -s $SCRIPTDIR/vim/vim-pathogen/autoload/pathogen.vim $SCRIPTDIR/vim/autoload
 mkdir -p $SCRIPTDIR/vim/colors
 rm $SCRIPTDIR/vim/colors/monokai.vim || true
 ln -s $SCRIPTDIR/vim/vim-monokai/colors/monokai.vim $SCRIPTDIR/vim/colors
+
+# vim hemisu
+mkdir -p $SCRIPTDIR/vim/colors
+rm $SCRIPTDIR/vim/colors/hemisu.vim || true
+ln -s $SCRIPTDIR/vim/vim-hemisu/colors/hemisu.vim $SCRIPTDIR/vim/colors
+
+# vim hemisu
+mkdir -p $SCRIPTDIR/vim/colors
+mkdir -p $SCRIPTDIR/vim/autoload
+rm $SCRIPTDIR/vim/colors/pencil.vim || true
+rm $SCRIPTDIR/vim/bundle/vim-airline/autoload/airline/themes/pencil.vim || true
+ln -s $SCRIPTDIR/vim/vim-colors-pencil/colors/pencil.vim $SCRIPTDIR/vim/colors
+ln -s $SCRIPTDIR/vim/vim-colors-pencil/autoload/airline/themes/pencil.vim $SCRIPTDIR/vim/bundle/vim-airline/autoload/airline/themes

@@ -13,3 +13,9 @@
 [submodule "vim/bundle/vim-ledger"]
 	path = vim/bundle/vim-ledger
 	url = https://github.com/ledger/vim-ledger
+[submodule "vim/vim-hemisu"]
+	path = vim/vim-hemisu
+	url = https://github.com/noahfrederick/vim-hemisu.git
+[submodule "vim/vim-colors-pencil"]
+	path = vim/vim-colors-pencil
+	url = https://github.com/reedes/vim-colors-pencil.git
