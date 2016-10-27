@@ -17,6 +17,17 @@ filetype plugin on
 "" enable mouse in normal mode by default
 set mouse=n
 
+"" ignore case if search pattern is all lowercase, case-sensitive otherwise http://nvie.com/posts/how-i-boosted-my-vim/
+set ignorecase
+set smartcase
+
+"" autoindentation on http://nvie.com/posts/how-i-boosted-my-vim/
+set autoindent
+
+"" # of spaces when indenting http://nvie.com/posts/how-i-boosted-my-vim/
+set shiftwidth=2
+set shiftround
+
 """""""""""""""""""""
 "" Bundles
 """""""""""""""""""""
