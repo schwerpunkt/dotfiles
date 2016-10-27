@@ -51,6 +51,20 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+"" NERDTree
+autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+" Close all open buffers on entering a window if the only
+" buffer that's left is the NERDTree buffer
+function! s:CloseIfOnlyNerdTreeLeft()
+  if exists("t:NERDTreeBufName")
+    if bufwinnr(t:NERDTreeBufName) != -1
+      if winnr("$") == 1
+        q
+      endif
+    endif
+  endif
+endfunction
+
 """"""""""""""""""""
 "" Colorschemes
 """"""""""""""""""""
@@ -60,4 +74,15 @@ colorscheme pencil
 set background=light
 let g:airline_theme = 'pencil'
 let g:pencil_higher_contrast_ui = 1   " 0=low (def), 1=high
+
+""""""""""""""""""""
+"" Keymappings
+""""""""""""""""""""
+
+"" Open NERDTree with CTRL+Tab
+map <C-l> :NERDTreeToggle<CR>
+
+"" H/L to go to previous/next tab
+nnoremap H gT
+nnoremap L gt
 
