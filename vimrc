@@ -26,3 +26,5 @@ filetype plugin on
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
 
+"" vim-multiple-cursors https://github.com/terryma/vim-multiple-cursors#mapping
+" TODO

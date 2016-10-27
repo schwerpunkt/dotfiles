@@ -13,3 +13,6 @@
 [submodule "vim/vim-colors-pencil"]
 	path = vim/vim-colors-pencil
 	url = https://github.com/reedes/vim-colors-pencil.git
+[submodule "vim/bundle/vim-multiple-cursors"]
+	path = vim/bundle/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
