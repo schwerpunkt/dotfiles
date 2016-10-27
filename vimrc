@@ -52,6 +52,8 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 "" NERDTree
+autocmd BufWinEnter * NERDTreeMirror
+"" NERDTree close on last window
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 " Close all open buffers on entering a window if the only
 " buffer that's left is the NERDTree buffer
