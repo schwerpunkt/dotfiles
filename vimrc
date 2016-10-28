@@ -73,5 +73,5 @@ map <C-l> :e.<CR>
 
 "" H/L to go to previous/next tab
 nnoremap H :bNext<CR>
-nnoremap L :bPrevious<CR>
+nnoremap L :bprevious<CR>
 
