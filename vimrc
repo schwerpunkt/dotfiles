@@ -72,6 +72,6 @@ let g:pencil_higher_contrast_ui = 1   " 0=low (def), 1=high
 map <C-l> :e.<CR>
 
 "" H/L to go to previous/next tab
-nnoremap H gT
-nnoremap L gt
+nnoremap H :bNext<CR>
+nnoremap L :bPrevious<CR>
 
