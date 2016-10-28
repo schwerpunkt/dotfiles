@@ -36,7 +36,10 @@ set shiftround
 execute pathogen#infect()
 
 "" bundle airline activate
+"" Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
+"" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
 set laststatus=2
 
 "" vim-multiple-cursors https://github.com/terryma/vim-multiple-cursors#mapping
@@ -50,22 +53,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
-"" NERDTree
-autocmd BufWinEnter * NERDTreeMirror
-"" NERDTree close on last window
-autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
-" Close all open buffers on entering a window if the only
-" buffer that's left is the NERDTree buffer
-function! s:CloseIfOnlyNerdTreeLeft()
-  if exists("t:NERDTreeBufName")
-    if bufwinnr(t:NERDTreeBufName) != -1
-      if winnr("$") == 1
-        q
-      endif
-    endif
-  endif
-endfunction
 
 """"""""""""""""""""
 "" Colorschemes
@@ -81,8 +68,8 @@ let g:pencil_higher_contrast_ui = 1   " 0=low (def), 1=high
 "" Keymappings
 """"""""""""""""""""
 
-"" Open NERDTree with CTRL+Tab
-map <C-l> :NERDTreeToggle<CR>
+"" Open e. with CTRL+l
+map <C-l> :e.<CR>
 
 "" H/L to go to previous/next tab
 nnoremap H gT
