@@ -28,6 +28,9 @@ set autoindent
 set shiftwidth=2
 set shiftround
 
+"" set vim updatetim (mainly because of gitgutter)
+set updatetime=250
+
 """""""""""""""""""""
 "" Bundles
 """""""""""""""""""""
@@ -54,15 +57,29 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-""""""""""""""""""""
-"" Colorschemes
-""""""""""""""""""""
+"" gitgutter maximum number of signs (500 default)
+let g:gitgutter_max_signs = 500
 
+""""""""""""""""""""
+"" Colorschemes 
+""""""""""""""""""""
 "" colors-pencil style
 colorscheme pencil
 set background=light
 let g:airline_theme = 'pencil'
 let g:pencil_higher_contrast_ui = 1   " 0=low (def), 1=high
+
+"" little additional gitgutter color
+"highlight clear SignColumn
+highlight GitGutterAdd ctermfg=darkgreen
+highlight GitGutterChange ctermfg=darkyellow
+highlight GitGutterDelete ctermfg=darkred
+highlight GitGutterChangeDelete ctermfg=yellow
+let g:gitgutter_sign_modified = '~~'
+let g:gitgutter_sign_added = ':+'
+let g:gitgutter_sign_removed = ':-'
+let g:gitgutter_sign_removed_first_line = '^-'
+let g:gitgutter_sign_modified_removed = 'ww' " no idea what that is
 
 """"""""""""""""""""
 "" Keymappings
