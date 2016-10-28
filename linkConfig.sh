@@ -27,7 +27,7 @@ mkdir -p $SCRIPTDIR/vim/autoload
 rm $SCRIPTDIR/vim/autoload/pathogen.vim || true
 ln -s $SCRIPTDIR/vim/vim-pathogen/autoload/pathogen.vim $SCRIPTDIR/vim/autoload
 
-# vim hemisu
+# vim pencil
 mkdir -p $SCRIPTDIR/vim/colors
 mkdir -p $SCRIPTDIR/vim/autoload
 rm $SCRIPTDIR/vim/colors/pencil.vim || true
