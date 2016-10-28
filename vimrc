@@ -71,7 +71,9 @@ let g:pencil_higher_contrast_ui = 1   " 0=low (def), 1=high
 "" Open e. with CTRL+l
 map <C-l> :e.<CR>
 
-"" H/L to go to previous/next tab
-nnoremap H :bNext<CR>
-nnoremap L :bprevious<CR>
+"" L to switch buffer in normal mode
+nnoremap L :bNext<CR>
+
+"" K to close buffer in normal mode
+nnoremap K :bdelete<CR>
 
