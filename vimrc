@@ -31,6 +31,10 @@ set shiftround
 "" set vim updatetim (mainly because of gitgutter)
 set updatetime=250
 
+"" detect external changes  check one time after 4s of inactivity in normal mode http://stackoverflow.com/questions/2157914/can-vim-monitor-realtime-changes-to-a-file
+set autoread
+ au CursorHold * checktime
+
 """""""""""""""""""""
 "" Bundles
 """""""""""""""""""""
