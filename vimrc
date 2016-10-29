@@ -48,9 +48,10 @@ let g:airline#extensions#tabline#enabled = 1
 "" Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
 set laststatus=2
-"" powerline fonts (symbols) (don't forget to update your terminal profile to use the font) https://github.com/powerline/fonts
-let g:airline_powerline_fonts = 1
-let g:Powerline_symbols='unicode'
+let g:airline_right_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_left_alt_sep= ''
+let g:airline_left_sep = ''
 
 "" vim-multiple-cursors https://github.com/terryma/vim-multiple-cursors#mapping
 " TODO
