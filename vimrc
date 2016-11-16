@@ -71,11 +71,11 @@ let g:gitgutter_max_signs = 500
 """"""""""""""""""""
 "" Colorschemes 
 """"""""""""""""""""
-"" colors-pencil style
-colorscheme pencil
+"" solariced style
+colorscheme solarized
 set background=light
-let g:airline_theme = 'pencil'
-let g:pencil_higher_contrast_ui = 1   " 0=low (def), 1=high
+"let g:airline_theme = 'pencil'
+"let g:pencil_higher_contrast_ui = 1   " 0=low (def), 1=high
 
 "" little additional gitgutter color
 "highlight clear SignColumn
