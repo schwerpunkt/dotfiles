@@ -8,9 +8,6 @@ syntax on
 "" set paste mode
 set paste
 
-"" fix terminal color
-let g:solarized_termcolors=256
-
 "" start with line numbers
 set nu
 
@@ -77,11 +74,8 @@ let g:gitgutter_max_signs = 500
 """"""""""""""""""""
 "" Colorschemes 
 """"""""""""""""""""
-"" solariced style
-colorscheme solarized
-set background=light
-"let g:airline_theme = 'pencil'
-"let g:pencil_higher_contrast_ui = 1   " 0=low (def), 1=high
+"" set background
+set background=dark
 
 "" little additional gitgutter color
 "highlight clear SignColumn
