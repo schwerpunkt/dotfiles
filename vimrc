@@ -5,6 +5,9 @@
 "" start with syntax
 syntax on
 
+"" set paste mode
+set paste
+
 "" start with line numbers
 set nu
 
