@@ -8,6 +8,9 @@ syntax on
 "" set paste mode
 set paste
 
+"" fix terminal color
+let g:solarized_termcolors=256
+
 "" start with line numbers
 set nu
 
