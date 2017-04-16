@@ -66,7 +66,7 @@ let g:gitgutter_max_signs = 500
 "" Colorschemes 
 """"""""""""""""""""
 "" set background
-set background=dark
+set background=light
 
 "" little additional gitgutter color
 "highlight clear SignColumn
