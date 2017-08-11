@@ -2,7 +2,7 @@
 
 # echo "updateLinkConfigs";bash ~/Documents/Git/configs/linkConfig.sh
 
-SCRIPTDIR=$(pwd -P)"/"
+SCRIPTDIR=$(pwd -P)
 
 # update submodules
 cd $SCRIPTDIR
@@ -26,3 +26,8 @@ ln -s $SCRIPTDIR/vim ~/.vim
 mkdir -p $SCRIPTDIR/vim/autoload
 rm $SCRIPTDIR/vim/autoload/pathogen.vim || true
 ln -s $SCRIPTDIR/vim/vim-pathogen/autoload/pathogen.vim $SCRIPTDIR/vim/autoload
+
+# emacs
+rm ~/.emacs || true
+rm -r ~/.emacs.d || true
+ln -s $SCRIPTDIR/emacs ~/.emacs
