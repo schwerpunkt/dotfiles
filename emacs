@@ -28,3 +28,6 @@
 
 (package-initialize)
 (require 'org-ref)
+
+;; wrap long lines by word boundary, and arrow up/down move by visual line, etc
+(global-visual-line-mode 1)
