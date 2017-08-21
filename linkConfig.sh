@@ -29,5 +29,4 @@ ln -s $SCRIPTDIR/vim/vim-pathogen/autoload/pathogen.vim $SCRIPTDIR/vim/autoload
 
 # emacs
 rm ~/.emacs || true
-rm -r ~/.emacs.d || true
 ln -s $SCRIPTDIR/emacs ~/.emacs
