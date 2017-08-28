@@ -2,8 +2,11 @@
 "" General
 """""""""""""""""""""
 
-"" start with syntax
+"" enable syntax highlighting
 syntax on
+
+"" allow wrapping to previous/next line when using cursor keys
+set whichwrap+=<,>,h,l,[,] 
 
 "" set paste mode
 set paste
