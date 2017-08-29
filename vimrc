@@ -8,6 +8,9 @@ syntax on
 "" allow wrapping to previous/next line when using cursor keys
 set whichwrap+=<,>,h,l,[,] 
 
+"" disable delay when switching from INSERT to NORMAL mode (could have broken some <esc> commands in INSERT mode that I don't know about)
+set esckeys
+
 "" set paste mode
 set paste
 
