@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# echo "updateLinkConfigs";bash ~/Documents/Git/configs/linkConfig.sh
+# echo "updateLinkConfigs";bash ~/Documents/Git/dotfiles/linkConfig.sh
+# in ./dotfiles/ 
 
 SCRIPTDIR=$(pwd -P)
 
